@@ -1,0 +1,11 @@
+body {
+  font-family: 'Questrial', sans-serif;
+  background-color: #b8a5c2;
+}
+
+img.portrait {
+  border-radius: 100%;
+  border: 1px solid #ddd;
+  padding: 5px;
+  width: 500px;
+}

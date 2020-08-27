@@ -1,0 +1,9 @@
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+
+<h2>{{ post.title }}</h2>
+<pre>{{ post.created|date:"D M jS Y"|upper }}</pre>
+<p>{{ post.content|safe }}</p>
+
+{% endblock %}
