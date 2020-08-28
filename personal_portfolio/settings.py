@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = 'qgzkugzwhkl-pzfdo__=3l4ei4gr$9f=6ul2((!ocny+=wkr#a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['alilysparrow.pythonanywhere.com']
 
 
 # Application definition
@@ -124,4 +124,12 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = BASE_DIR / 'media'
+
+
+# Use local_settings in dev
+try:
+    from .local_settings import *
+except ImportError:
+    print("No local_settings founds")
+
 
